@@ -1,8 +1,8 @@
 ufs-weather-model-output
-2021 07 27 00 0 0
+2021 07 27 06 0 0
 
-"fv3_history",             3,  "hours",    1, "hours", "time"
-"fv3_history2d",           3,  "hours",    1, "hours", "time"
+"fv3_history",    3,  "hours",  1,  "hours",  "time"
+"fv3_history2d",  3,  "hours",  1,  "hours",  "time"
 
 #
 ###
@@ -46,7 +46,7 @@ ufs-weather-model-output
 "gfs_phys",  "hpbl",          "hpbl",        "fv3_history2d",         "all",  .false.,  "none",  2
 "gfs_phys",  "lhtfl_ave",     "lhtfl_ave",   "fv3_history2d",         "all",  .false.,  "none",  2
 "gfs_phys",  "shtfl_ave",     "shtfl_ave",   "fv3_history2d",         "all",  .false.,  "none",  2
-"gfs_phys",  "pwat",          "pwatclm",     "fv3_history2d",         "all",  .false.,  "none",  2
+"gfs_phys",  "pwat",          "pwat",        "fv3_history2d",         "all",  .false.,  "none",  2
 "gfs_phys",  "soilm",         "soilm",       "fv3_history2d",         "all",  .false.,  "none",  2
 "gfs_phys",  "TCDC_aveclm",   "tcdc_aveclm", "fv3_history2d",         "all",  .false.,  "none",  2
 "gfs_phys",  "TCDC_avebndcl", "tcdc_avebndcl",  "fv3_history2d",         "all",  .false.,  "none",  2
