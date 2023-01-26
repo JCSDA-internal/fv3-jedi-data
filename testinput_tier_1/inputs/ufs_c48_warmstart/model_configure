@@ -2,7 +2,7 @@ print_esmf:              .true.
 start_year:              2021
 start_month:             07
 start_day:               28
-start_hour:              06
+start_hour:              00
 start_minute:            0
 start_second:            0
 nhours_fcst:             24
