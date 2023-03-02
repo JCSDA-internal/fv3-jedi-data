@@ -1,5 +1,5 @@
 print_esmf:              .true.
-start_year:              %year% 
+start_year:              %year%
 start_month:             %month%
 start_day:               %day%
 start_hour:              %hour%
