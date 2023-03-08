@@ -5,6 +5,7 @@ start_day:               %day%
 start_hour:              %hour%
 start_minute:            0
 start_second:            0
+calendar:                %calendar%
 nhours_fcst:             %fc_length%
 fhrot:                   6
 
