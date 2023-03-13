@@ -1,13 +1,14 @@
 &atmos_model_nml
   blocksize = 32
   chksum_debug = .false.
+  ignore_rst_cksum = .true.
   dycore_only = .false.
   ccpp_suite = 'FV3_GFS_v16'
 /
 
 &diag_manager_nml
   prepend_date = .false.
-  max_output_fields = 300
+  max_output_fields = 310
 /
 
 &fms_io_nml
@@ -23,11 +24,12 @@ deflate_level=1
 
 &fms_nml
   clock_grain = 'ROUTINE'
-  domains_stack_size = 5000000
+  domains_stack_size = 3000000
   print_memory_usage = .false.
 /
 
 &fv_core_nml
+  ignore_rst_cksum = .true.
   layout = 1,1
   io_layout = 1,1
   npx = 49
@@ -113,7 +115,6 @@ deflate_level=1
   qdiag3d      = .false.
   print_diff_pgr = .false.
   fhcyc        = 24
-  !fhcyc        = 0
   use_ufo      = .true.
   pre_rad      = .false.
   imp_physics  = 11
@@ -198,6 +199,7 @@ deflate_level=1
   rrtmgp_nGptsLW     = 128
   rrtmgp_nBandsLW    = 16
   rrtmgp_nBandsSW    = 14
+  rrtmgp_lw_phys_blksz = 16
   doGP_cldoptics_LUT = .false.
   doGP_lwscat        = .false.
   progsigma    = .false.
