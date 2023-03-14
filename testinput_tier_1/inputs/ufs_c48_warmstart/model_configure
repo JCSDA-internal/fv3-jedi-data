@@ -5,7 +5,7 @@ start_hour:              00
 start_minute:            0
 start_second:            0
 nhours_fcst:             24
-fhrot:                   0
+fhrot:                   6
 
 dt_atmos:                1200
 restart_interval:        6, -1
