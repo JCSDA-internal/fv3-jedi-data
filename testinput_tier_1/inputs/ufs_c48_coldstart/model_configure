@@ -1,16 +1,15 @@
-print_esmf:              .true.
-start_year:              2021
-start_month:             07
-start_day:               28
+start_year:              2022
+start_month:             02
+start_day:               15
 start_hour:              00
 start_minute:            0
 start_second:            0
 nhours_fcst:             6
-fhrot:                   6
+fhrot:                   0
 
 dt_atmos:                1200
 restart_interval:        6, -1
-output_1st_tstep_rst:    .true.
+output_1st_tstep_rst:    .false.
 
 quilting:                .false.
 write_groups:            1
@@ -31,5 +30,5 @@ kchunk3d:                0
 imo:                     192
 jmo:                     94
 
-output_fh:               24 -1
+output_fh:               6 -1
 iau_offset:              0
