@@ -9,4 +9,4 @@
 
 cmake_minimum_required( VERSION 3.3.2 FATAL_ERROR )
 
-project( fv3_jedi_data VERSION 1.5.0 DESCRIPTION "FV3-JEDI Test Files" )
+project( fv3_jedi_data VERSION 1.6.0 DESCRIPTION "FV3-JEDI Test Files" )
