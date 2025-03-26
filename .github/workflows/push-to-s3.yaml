@@ -1,6 +1,6 @@
 # On push to develop this workflow will create a tarball of the repository
-# and push it to the s3 path defined under LFS_BUCKET_AND_PATH`.
-# This tarball is used by our testing infrastructure to save GitLFS bandwidth.
+# and push it to the s3 path defined by LFS_BUCKET_AND_PATH. This tarball is
+# used by our testing infrastructure to save GitLFS bandwidth.
 
 on:
   push:
@@ -36,7 +36,10 @@ jobs:
           LFS_BUCKET_AND_PATH: jcsda-usaf-ci-build-cache/lfs
         run: |
           export repository_name=$(basename $(pwd))
-          echo "repository_name=${repository_name}"
+          echo "Prep repo ${repository_name} for upload"
+          git fetch --all
+          git checkout develop
+          git config --local --remove-section 'http.https://github.com/'
           echo "Creating this tarball can take several minutes."
           cd ..
           tar -czf "${repository_name}.tar.gz" "${repository_name}"
