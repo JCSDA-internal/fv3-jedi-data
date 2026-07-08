@@ -4,7 +4,7 @@
 # which can be obtained at http://www.apache.org/licenses/LICENSE-2.0.
 
 cmake_minimum_required( VERSION 3.12 )
-project( fv3-jedi-data VERSION 1.9.0 DESCRIPTION "FV3-JEDI Test Files" )
+project( fv3-jedi-data VERSION 1.12.0 DESCRIPTION "FV3-JEDI Test Files" )
 
 find_package(ecbuild QUIET)
 include(ecbuild_system NO_POLICY_SCOPE)
